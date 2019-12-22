@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unit 4 game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../HW-unit-4-game/assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="../HW-unit-4-game/assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../HW-unit-4-game/assets/css/reset.css"> -->
+</head>
+
+<body>
+    <header class="boxShape">
+        <h1>Crystals Collector!</h1>
+    </header>
+    <section class="boxShape">
+        <!-- instructions -->
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, this game will change the values of each crystal.</p>
+    </section>
+    <div class="clear"></div>
+    <!-- Score -->
+    <div id="totalScore" class="boxShape">
+        <h1 id="scoreVariable">Number</h1>
+    </div>
+    <div id="scoreTally" class="boxShape">
+        <p id="wins">Wins:</p>
+        <p id="losses">Losses:</p>
+    </div>
+
+    <div class="clear"></div>
+
+    <!-- Jewel buttons -->
+    <button id="jewel1" class="button"><img src="assets/images/jewel1.png"></button>
+    <button id="jewel2" class="button"><img src="assets/images/jewel2.png"></button>
+    <button id="jewel3" class="button"><img src="assets/images/jewel3.png"></button>
+    <button id="jewel4" class="button"><img src="assets/images/jewel4.png"></button>
+
+    <div class="clear"></div>
+
+    <section id="userTally">
+        <p>Your total score is:</p>
+    </section>
+    <section id="userScore">
+        0
+    </section>
+</body>
+</html>
